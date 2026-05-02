@@ -64,7 +64,7 @@ body {
 }
 
 .card:not(.active) {
-  transform: scale(0.93) translateY(0px);
+  transform: scale(0.93);
   filter: brightness(0.55);
 }
 
@@ -74,41 +74,6 @@ body {
   object-fit: cover;
   pointer-events: none;
   display: block;
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(255,255,255,0.07) 0%, transparent 40%, rgba(0,0,0,0.25) 100%);
-  z-index: 1;
-  pointer-events: none;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 40px 20px 22px;
-  background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 60%, transparent 100%);
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  line-height: 1.4;
-  z-index: 2;
-}
-
-.overlay.nofilter { color: #ffbe70; }
-
-.card-type {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  opacity: 0.65;
-  margin-bottom: 6px;
 }
 
 .dots {
@@ -159,18 +124,12 @@ body {
     <div class="track" id="track">
       <div class="card active">
         <img src="https://raw.githubusercontent.com/blifilter/card-slider/main/p2.jpeg" alt="">
-מה הדבר בי שהכי משך אותך?
-        </div>
       </div>
       <div class="card">
         <img src="https://raw.githubusercontent.com/blifilter/card-slider/main/p3.jpeg" alt="">
-מה היית רוצה שנשפר בינינו?
-        </div>
       </div>
       <div class="card">
         <img src="https://raw.githubusercontent.com/blifilter/card-slider/main/P4.jpeg" alt="">
-🔥 האם יש משהו שאתה מסתיר ממני?
-        </div>
       </div>
     </div>
   </div>
