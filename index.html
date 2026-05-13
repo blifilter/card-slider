@@ -48,7 +48,6 @@ body {
   pointer-events: none;
 }
 
-/* מצבי הקלפים */
 .card.state-active {
   transform: translateX(0) scale(1);
   opacity: 1;
@@ -73,7 +72,6 @@ body {
   z-index: 1;
 }
 
-/* נקודות */
 .dots {
   display: flex;
   gap: 8px;
@@ -103,13 +101,13 @@ body {
 <div class="slider-container">
   <div class="cards-wrapper" id="wrapper">
     <div class="card" id="card0">
-      <img src="https://raw.githubusercontent.com/blifilter/card-slider/main/p2.jpeg">
+      <img src="https://raw.githubusercontent.com/blifilter/card-slider/859ec13ba850bc2d6b5f305767655797d295975d/web2.jpeg">
     </div>
     <div class="card" id="card1">
-      <img src="https://raw.githubusercontent.com/blifilter/card-slider/main/p3.jpeg">
+      <img src="https://raw.githubusercontent.com/blifilter/card-slider/859ec13ba850bc2d6b5f305767655797d295975d/web3.jpeg">
     </div>
     <div class="card" id="card2">
-      <img src="https://raw.githubusercontent.com/blifilter/card-slider/main/P4.jpeg">
+      <img src="https://raw.githubusercontent.com/blifilter/card-slider/859ec13ba850bc2d6b5f305767655797d295975d/web4.jpeg">
     </div>
   </div>
   <div class="dots" id="dots"></div>
@@ -126,7 +124,6 @@ const dotsEl = document.getElementById('dots');
 const total  = cards.length;
 let current  = 0;
 
-// צור נקודות
 cards.forEach((_, i) => {
   const d = document.createElement('div');
   d.className = 'dot' + (i === 0 ? ' active' : '');
@@ -153,7 +150,6 @@ function goTo(idx) {
 
 goTo(0);
 
-// swipe
 let startX = 0, dragging = false;
 const wrapper = document.getElementById('wrapper');
 
